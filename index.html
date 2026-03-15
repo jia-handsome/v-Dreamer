@@ -64,7 +64,7 @@
     <div class="container is-max-desktop">
       <div class="hero-body">
         <video id="teaser" autoplay muted loop playsinline height="100%">
-          <source src="static/videos/banner_video.mp4" type="video/mp4">
+          <source src="static/videos/3.15.mp4" type="video/mp4">
         </video>
         <h2 class="subtitle has-text-centered" style="margin-top: 15px;">
           (一句话介绍) V-Dreamer automates robotic simulation and trajectory synthesis...
@@ -80,7 +80,30 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              请在这里填入你论文的真实摘要。Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet.
+              Training generalist robots demands large-scale,
+diverse manipulation data, yet real-world collection is pro
+hibitively expensive, and existing simulators are often con
+strained by fixed asset libraries and manual heuristics. To
+bridge this gap, we present V-Dreamer, a fully automated
+framework that generates open-vocabulary, simulation-ready
+manipulation environments and executable expert trajectories
+directly from natural language instructions. V-Dreamer em
+ploys a novel generative pipeline that constructs physically
+grounded 3D scenes using large language models and 3D
+generative models, validated by geometric constraints to ensure
+stable, collision-free layouts. Crucially, for behavior synthesis,
+we leverage video generation models as rich motion priors.
+These visual predictions are then mapped into executable robot
+trajectories via a robust Sim-to-Gen visual-kinematic alignment
+module utilizing CoTracker3 and VGGT. This pipeline supports
+high visual diversity and physical fidelity without manual
+intervention. To evaluate the generated data, we train imitation
+learning policies on synthesized trajectories encompassing di
+verse object and environment variations. Extensive evaluations
+on tabletop manipulation tasks using the Piper robotic arm
+demonstrate that our policies robustly generalize to unseen
+objects in simulation and achieve effective sim-to-real transfer,
+successfully manipulating novel real-world objects.
             </p>
           </div>
         </div>
